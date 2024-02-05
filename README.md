@@ -17,3 +17,5 @@
 - not supported by any opreting system or hardware yet.
 ## Licence
 QCT is a open format and libqct is GNU GPL licensed
+## why
+- If you want fast and better quality than jpeg and more compression than png.
