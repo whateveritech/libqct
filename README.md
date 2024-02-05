@@ -1,5 +1,5 @@
 # libqct
-- new fast image compression
+- QCT is a New and simple image file, with fast compression.
 - QCT uses Delta & Run length coding.
 - it only compresses yuv color model.
 - quantization is also supported for more compression.
