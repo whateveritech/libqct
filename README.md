@@ -12,3 +12,8 @@
 ## other features after beta of qct 
 - storing Exif on the extended header.
 - en/decrypting the image file.
+## limitation
+- bigger size compered lz77 compression(but slower).
+- not supported by any opreting system or hardware yet.
+## Licence
+* qct is a open format and libqct is GNU GPL licensed
