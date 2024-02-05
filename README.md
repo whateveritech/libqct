@@ -1,6 +1,6 @@
 # libqct
 - new fast image compression
-- qct uses Delta & Run length coding.
+- QCT uses Delta & Run length coding.
 - it only compresses yuv color model.
 - quantization is also supported for more compression.
 ## what is the difference between jpeg and qct
@@ -16,4 +16,4 @@
 - bigger size compered lz77 compression(but slower).
 - not supported by any opreting system or hardware yet.
 ## Licence
-qct is a open format and libqct is GNU GPL licensed
+QCT is a open format and libqct is GNU GPL licensed
