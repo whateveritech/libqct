@@ -4,7 +4,7 @@
 - it only compresses yuv color model.
 - quantization is also supported for more compression.
 ## what is the difference between jpeg and qct
-- jpeg uses dct for more compression and scarifying quality.
+- jpeg uses DCT(Discrete cosine transform) for more compression and scarifying quality.
 - QCT uses the original YUV data to compress, resulting in a little more size.
 ## what is the difference between png and qct
 - png is a lossless image file, commpressing RGBA values so it could be large in size.
