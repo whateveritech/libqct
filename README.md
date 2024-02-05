@@ -8,5 +8,6 @@
 ## what is the difference between png and qct
 - png is a lossless image file, commpressing RGBA values so it could be large in size.
 - png take lot of time en/decoding.
-## other features of qct 
-- storing Exif on extended header.
+## other features after beta of qct 
+- storing Exif on the extended header.
+- en/decrypting the image file.
