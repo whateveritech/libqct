@@ -16,4 +16,4 @@
 - bigger size compered lz77 compression(but slower).
 - not supported by any opreting system or hardware yet.
 ## Licence
-``` qct is a open format and libqct is GNU GPL licensed
+qct is a open format and libqct is GNU GPL licensed
