@@ -1,2 +1,5 @@
 # libqct
-Simple C Library for qct file
+- new fast image compression
+- qct uses Delta & Run length coding.
+- it only compresses yuv color model.
+#what is the difference between jpeg and qct
