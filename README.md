@@ -13,7 +13,7 @@
 - storing Exif on the extended header.
 - en/decrypting the image file.
 ## limitation with solutions
-- bigger size compered LZ77 and Deflate compression(but slower) : compressing QCT file in zip or 7z file for more compression.
-- not supported by any opreting system or hardware yet : supporting the project.
+- bigger size compered LZ77 and Deflate compression(but slower). compressing QCT file in zip or 7z file for more compression.
+- not supported by any opreting system or hardware yet. supporting the project.
 ## Licence
 QCT is a open format and libqct is GNU GPL licensed
