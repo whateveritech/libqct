@@ -246,7 +246,6 @@ char* decode_qct(char* buffer, short* width, short* height, int size, int* osize
         decode_rle(in, out, &size_in, size - sizeof(struct qct_header));
         output = yuv_, input = out;
     }
-    printf("%d\n", size);
     input_header = input, input_ref = &input[header.dc24_header_size + 1],
     input_delta = &input[(header.dc24_header_size + header.dc24_header_reference_size) + 2];
     for(p = 0;;){
