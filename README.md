@@ -10,6 +10,7 @@
 - png take lot of time en/decoding.
 ## features on version 1 of qct 
 - Added YUV444 & YUV422.
+- Alpha is also available
 - More compression.
 ## Limitation
 - bigger size compered LZ77 and Deflate compression(but slower), compress QCT file in zip or 7z file for more compression.
