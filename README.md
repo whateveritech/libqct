@@ -16,7 +16,7 @@
 - not supported by any opreting system or hardware yet.
 ## Licence
 QCT is a open format and libqct is GNU GPL licensed
-## How To use example
+## How to use example
 -     encode.exe sample.qct sample.png
 -     encode.exe sample.qct sample.jpg yuv444
 -     decode.exe sample.qct sample_out.png
