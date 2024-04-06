@@ -1,4 +1,4 @@
-# libqct
+# libqct Library for encoding/decoding QCT written for C/C++
 - QCT is a New and simple image file, with fast compression.
 - QCT uses Delta & Run length coding.
 - it only compresses yuv color model.
