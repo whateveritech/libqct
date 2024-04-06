@@ -16,8 +16,11 @@
 - not supported by any opreting system or hardware yet.
 ## Licence
 QCT is a open format and libqct is GNU GPL licensed
-## Why QCT
-- If you want fast and better quality than jpeg and more compression than png.
+## How To use example
+-     encode.exe sample.qct sample.png
+-     encode.exe sample.qct sample.jpg yuv444
+-     decode.exe sample.qct sample_out.png
+-     decode.exe sample.qct sample_out.bmp
 ## Releases
 - Beta version 0 : Feb 6 2024
 - Stable version 1 : Apr 6 2024
