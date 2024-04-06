@@ -21,4 +21,4 @@ QCT is a open format and libqct is GNU GPL licensed
 - If you want fast and better quality than jpeg and more compression than png.
 ## Releases
 - Beta version 0 : Feb 6 2024
-     version 1 : Apr 6 2024
+- Stable version 1 : Apr 6 2024
