@@ -491,7 +491,7 @@ char* decode_qct(char* buffer, short* width, short* height, int size, int* bit_c
     in+=sizeof(struct qct_header);
     unsigned char previous_chain, chain_size, com1, com2, delta, padded = 0, add = 0;
     unsigned int p = 0, output_size = 0, bit_side = 0, size_in = size, header_pos = 0, header_reference_pos = 0, fpos = 0, 
-    bit_count = *bit_c = (header.flag & 0x0800) ? 4 : 3;
+    bit_count = *bit_c = (header.version && (header.flag & 0x0800)) ? 4 : 3;
     out = (unsigned char*)alloc_mem(header.width * header.height * bit_count);
     unsigned char* output, *input, *input_header, *input_ref, * input_delta; 
     *width = header.width;
@@ -559,10 +559,13 @@ char* decode_qct(char* buffer, short* width, short* height, int size, int* bit_c
         }
     }
     unsigned char* yuv_inp = output,* rgb_out = input;
-         if((header.flag & 0xc000) == 0x4000) YUV_RGB_420(yuv_inp, rgb_out, header.width, header.height, bit_count);
-    else if((header.flag & 0xc000) == 0x8000) YUV_RGB_422(yuv_inp, rgb_out, header.width, header.height, bit_count);
-    else if((header.flag & 0xc000) == 0xc000) YUV_RGB_444(yuv_inp, rgb_out, header.width, header.height, bit_count);
-    else goto QCT_DEC_ERR;
+    if(header.version){
+                 if((header.flag & 0xc000) == 0x4000) YUV_RGB_420(yuv_inp, rgb_out, header.width, header.height, bit_count);
+        else if((header.flag & 0xc000) == 0x8000) YUV_RGB_422(yuv_inp, rgb_out, header.width, header.height, bit_count);
+        else if((header.flag & 0xc000) == 0xc000) YUV_RGB_444(yuv_inp, rgb_out, header.width, header.height, bit_count);
+        else goto QCT_DEC_ERR;
+    }
+    else YUV_RGB_420(yuv_inp, rgb_out, header.width, header.height, bit_count);
     return (char*)rgb_out;
     QCT_DEC_ERR:
     free_mem(out, header.width * header.height * bit_count);
